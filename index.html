@@ -14,166 +14,110 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="container-lg d-flex">
             <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-block d-lg-none">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 mt-3" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
-                    <li class="nav-item px-5">
+                    <li class="nav-item me-5">
                         <a href="#" class="nav-link active">Dolor</a>
                     </li>
-                    <li class="nav-item px-5">
-                        <a href="#" class="nav-link">Sit</a>
+                    <li class="nav-item me-5">
+                        <a href="#" class="nav-link disabled">Sit</a>
                     </li>
-                    <li class="nav-item px-5">
-                        <a href="#" class="nav-link">Amet</a>
+                    <li class="nav-item me-5">
+                        <a href="#" class="nav-link disabled">Amet</a>
                     </li>
+                    <i class="d-inline-flex d-lg-none">
+                        <a class="nav-link active fst-normal" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Opciones
+                        </a>
+                    </i>
                 </ul>
-                <div id="options-container" class="d-lg-none">
-                    <a class="nav-link text-white-50" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true">
-                        Opciones
-                    </a>
-                </div>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
+
+                <div class="d-none d-lg-block ml-auto">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>     
+            </div>
             </div>
         </div>
     </nav>
 
-    <div class="text-center px-5 py-5">
-        <h4>Lorem ipsum...</h4>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<main>
+    <div class="container-md mt-5 d-none d-lg-block">
+        <h1 class="text-center fs-4">Lorem ipsum...</h1>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <p class="fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+              <div class="carousel-item active text-center">
+               Lorem ipsum dolor sit amet
               </div>
-              <div class="carousel-item">
-                <p class="fw-normal">...Amet vitae maxime ratione odio iusto maiores, eaque veniam officia laudantium...</p>
+              <div class="carousel-item text-center">
+                consectetur adipisicing elit
               </div>
-              <div class="carousel-item">
-                <p class="fw-normal">...Debitis natus ut ullam nesciunt consectetur et quasi.</p>
+              <div class="carousel-item text-center">
+                Velit ipsa quia impedit
               </div>
             </div>
-          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
     </div>
 
-    <!--
+    <div class="container">
+
+        <div class="row ">
+        <div class="container-md collapse d-lg-none col-12 col-md-9" id="collapseExample">
+             
+            <div class="list-group mt-2">
+                <a href="#" class="list-group-item list-group-item-action p-3 text-decoration-underline">Opción 1</a>
+                <a href="#" class="list-group-item list-group-item-action p-3 text-decoration-underline">Opción 2</a>
+                <a href="#" class="list-group-item list-group-item-action p-3 text-decoration-underline">Opción 3</a>
+                <a href="#" class="list-group-item list-group-item-action p-3 text-decoration-underline">Opción 4</a>
+            </div>
+           
+        </div>
         
-    -->
-
-    <div class="container align-content-center">
-        <div class="row align-baseline">
-            <div class="col-lg-2 col-md-12">
-                <ul class="list-group" id="collapseExample">
-                    <li class="list-group-item text-decoration-underline">Opción 1</li>
-                    <li class="list-group-item text-decoration-underline">Opción 2</li>
-                    <li class="list-group-item text-decoration-underline">Opción 3</li>
-                    <li class="list-group-item text-decoration-underline">Opción 4</li>
-                </ul>
+        <div class="col-12 col-md-3 d-none d-lg-block">
+            <div class="list-group mt-2">
+                <a href="#" class="list-group-item list-group-item-action p-3 text-decoration-underline">Opción 1</a>
+                <a href="#" class="list-group-item list-group-item-action p-3 text-decoration-underline">Opción 2</a>
+                <a href="#" class="list-group-item list-group-item-action p-3 text-decoration-underline">Opción 3</a>
+                <a href="#" class="list-group-item list-group-item-action p-3 text-decoration-underline">Opción 4</a>
             </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-3 bg-light align-baseline">
-                <p class="lh-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sint voluptate cumque minima ex reiciendis amet nisi non facilis aliquam, hic fugiat. Quis consequuntur quia excepturi odio iure harum officia. 
-                </p>
-                <p class="lh-base">
-                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, officiis! Doloremque maxime et officia. Quae, laboriosam officia! Doloremque illo nam ducimus, itaque ut aspernatur cum perspiciatis harum consequatur quisquam? Nulla! 
-                </p>
-                <p class="lh-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolores laborum exercitationem maiores commodi illo reiciendis.
-                </p>
-            </div>
+        </div>  
+       
+        <div class="container col-md-9">
+       
+            <div class="row mt-2" style="text-align: justify;">
+                <div class="col-12 col-md-6 col-lg-4 mb-2 bg-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate fugit error consectetur maiores animi? Architecto pariatur sapiente quaerat suscipit, consectetur.</div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2 bg-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate fugit error consectetur maiores animi? Architecto pariatur sapiente quaerat suscipit, consectetur.</div>
+                <div class="col-12 col-md-6 col-lg-4  mb-2 bg-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate fugit error consectetur maiores animi? Architecto pariatur sapiente quaerat suscipit, consectetur.</div>
     
-            <div class="col-sm-6 col-md-6 col-lg-3 bg-light align-baseline ">
-                <p class="lh-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sint voluptate cumque minima ex reiciendis amet nisi non facilis aliquam, hic fugiat. Quis consequuntur quia excepturi odio iure harum officia. 
-                </p>
-                <p class="lh-base">
-                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, officiis! Doloremque maxime et officia. Quae, laboriosam officia! Doloremque illo nam ducimus, itaque ut aspernatur cum perspiciatis harum consequatur quisquam? Nulla! 
-                </p>
-                <p class="lh-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolores laborum exercitationem maiores commodi illo reiciendis.
-                </p>
-            </div>
-    
-            <div class="col-sm-6 col-md-6 col-lg-3 bg-light align-baseline">
-                <p class="lh-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sint voluptate cumque minima ex reiciendis amet nisi non facilis aliquam, hic fugiat. Quis consequuntur quia excepturi odio iure harum officia. 
-                </p>
-                <p class="lh-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolores laborum exercitationem maiores commodi illo reiciendis.
-                </p>
+           
+                <div class="col-12 col-md-6 col-lg-4  mb-2 bg-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate fugit error consectetur maiores animi? Architecto pariatur sapiente quaerat suscipit, consectetur.</div>
+                <div class="col-12 col-md-6 col-lg-4  mb-2 bg-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate fugit error consectetur maiores animi? Architecto pariatur sapiente quaerat suscipit, consectetur.</div>
+                <div class="col-12 col-md-6 col-lg-4  mb-2 bg-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate fugit error consectetur maiores animi? Architecto pariatur sapiente quaerat suscipit, consectetur.</div>
+          
+
+                <div class="col-12 col-md-6 col-lg-4  mb-2 bg-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate fugit error consectetur maiores animi? Architecto pariatur sapiente quaerat suscipit, consectetur.</div>
+                <div class="col-12 col-md-6 col-lg-4  mb-2 bg-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cupiditate fugit error consectetur maiores animi? Architecto pariatur sapiente quaerat suscipit, consectetur.</div>
+                <div class="col-12 col-md-6 col-lg-4  mb-2 bg-body-secondary"></div>
             </div>
         </div>
-    </div>
-
-<!--
-<div class="container align-content-center">
-        <div class="row">
-            <div class="col-2">
-                <ul class="list-group">
-                    <li class="list-group-item text-decoration-underline">Opción 1</li>
-                    <li class="list-group-item text-decoration-underline">Opción 2</li>
-                    <li class="list-group-item text-decoration-underline">Opción 3</li>
-                    <li class="list-group-item text-decoration-underline">Opción 4</li>
-                 </ul>
-            </div>
-            <div class="col-10">
-                <div class="row mb-3">
-                    <div class="col-3 bg-light">
-                        <p class="lh-base align-items-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi tempore repellat ducimus voluptatibus alias totam inventore non voluptatum quod placeat.
-                        </p>
-                    </div>
-                    <div class="col-3 bg-light">
-                        <p class="lh-base align-items-center">
-                            Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt.
-                        </p>
-                    </div>
-                    <div class="col-3 bg-light">
-                        <p class="lh-base align-items-center">
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
-                        </p>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-3 bg-light">
-                        <p class="lh-base align-items-center">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                        </p>
-                    </div>
-                    <div class="col-3 bg-light">
-                        <p class="lh-base align-items-center">
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.
-                        </p>
-                    </div>
-                    <div class="col-3 bg-light">
-                        <p class="lh-base align-items-center">
-                            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3 bg-light">
-                        <p class="lh-base align-items-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum tempora, tenetur aperiam atque non minus nobis labore eum, culpa vel aut quasi facere delectus consequatur quis ut pariatur possimus?             
-                        </p>
-                    </div>
-                    <div class="col-3 bg-light">
-                        <p class="lh-base align-items-center">
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
-                        </p>
-                    </div>
-                    <div class="col-3">
-                </div>
-            </div>
         </div>
     </div>
--->  
-
-
-    
-    
-    
-
+</main>
 
 
 
